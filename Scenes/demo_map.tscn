@@ -68,7 +68,3 @@ offset_right = 102.0
 offset_bottom = -36.0
 text = "Ryan S."
 label_settings = SubResource("LabelSettings_husy1")
-
-[node name="DinoSpritesMort" type="Sprite2D" parent="." unique_id=709053956]
-position = Vector2(-47, 10)
-texture = ExtResource("2_bdi8m")
