@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://cuyeunwmfs0sg"]
+
+[ext_resource type="Texture2D" uid="uid://bisv8vcv0qitv" path="res://icon.svg" id="1_hkha8"]
+[ext_resource type="Texture2D" uid="uid://b82g2o4s7fhy0" path="res://assets/2D_Provided_Resources/characters/DinoSprites - mort.png" id="2_bdi8m"]
+[ext_resource type="FontFile" uid="uid://bxggqeal5xie1" path="res://assets/2D_Provided_Resources/fonts/PixelOperator8.ttf" id="3_bdi8m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_husy1"]
+atlas = ExtResource("2_bdi8m")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wveh7"]
+atlas = ExtResource("2_bdi8m")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8jj6"]
+atlas = ExtResource("2_bdi8m")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrg3h"]
+atlas = ExtResource("2_bdi8m")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_05rwe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_husy1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wveh7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8jj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrg3h")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_husy1"]
+font = ExtResource("3_bdi8m")
+font_size = 36
+
+[node name="DemoMap" type="Node2D" unique_id=1459569015]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=67527316]
+position = Vector2(-1.5000029, 66.50001)
+scale = Vector2(2.4609375, 0.30468732)
+texture = ExtResource("1_hkha8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1663425718]
+position = Vector2(1, 24)
+sprite_frames = SubResource("SpriteFrames_05rwe")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.8800002
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=859431814]
+zoom = Vector2(3.5, 3.5)
+
+[node name="Label" type="Label" parent="." unique_id=173309110]
+offset_left = -96.0
+offset_top = -73.0
+offset_right = 102.0
+offset_bottom = -36.0
+text = "Ryan S."
+label_settings = SubResource("LabelSettings_husy1")
+
+[node name="DinoSpritesMort" type="Sprite2D" parent="." unique_id=709053956]
+position = Vector2(-47, 10)
+texture = ExtResource("2_bdi8m")
