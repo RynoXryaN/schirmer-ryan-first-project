@@ -47,8 +47,8 @@ font_size = 36
 [node name="DemoMap" type="Node2D" unique_id=1459569015]
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=67527316]
-position = Vector2(-1.5000029, 66.50001)
-scale = Vector2(2.4609375, 0.30468732)
+position = Vector2(-1.8119812e-05, 61.00001)
+scale = Vector2(2.1718748, 0.21874987)
 texture = ExtResource("1_hkha8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1663425718]
@@ -59,7 +59,7 @@ autoplay = "idle"
 frame_progress = 0.8800002
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=859431814]
-zoom = Vector2(3.5, 3.5)
+zoom = Vector2(4, 4)
 
 [node name="Label" type="Label" parent="." unique_id=173309110]
 offset_left = -96.0
