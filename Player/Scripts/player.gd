@@ -1,6 +1,19 @@
 class_name Player
 extends CharacterBody2D
 
+#region /// State Machine Variables
+var states : Array[ PlayerState ]
+var current_state : PlayerState :
+	get : return states.front()
+var previous_state : PlayerState :
+	get : return states[ 1 ]
+#endregion
+
+#region /// standard variables
+var direction : Vector2 = Vector2.ZERO
+var gravity : float = 980
+#endregion
+
 
 #const SPEED = 300.0
 #const JUMP_VELOCITY = -400.0
@@ -11,12 +24,26 @@ func _process( _delta: float ) -> void:
 	pass
 
 func _physics_process( _delta: float ) -> void:
-	velocity.x = 0
-	if Input.is_action_pressed("left"):
-		velocity.x = -100
-	elif Input.is_action_pressed("right"):
-		velocity.x = 100
-	velocity.y = velocity.y + 980 * _delta
+	pass
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	#if not is_on_floor():
 		#velocity += get_gravity() * delta
 
