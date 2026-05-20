@@ -15,18 +15,31 @@ var gravity : float = 980
 #endregion
 
 
-#const SPEED = 300.0
-#const JUMP_VELOCITY = -400.0
 
+func _ready() -> void:
+	initialize_states()
+	pass
+	
 
 func _process( _delta: float ) -> void:
-	
+
 	pass
 
 func _physics_process( _delta: float ) -> void:
 	pass
+
+
 	
-	
+func initialize_states() -> void:
+	states = []
+	# gather all states
+	for c in $States.get_children():
+		if c is PlayerState:
+			states.append( c )
+		pass
+		print( states )
+	# set our first state
+	pass
 	
 	
 	

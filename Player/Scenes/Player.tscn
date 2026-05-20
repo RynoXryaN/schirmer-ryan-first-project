@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dwdty0xtxhtek" path="res://Player/Scripts/player.gd" id="1_0qu43"]
 [ext_resource type="Texture2D" uid="uid://du1hmekg0npoi" path="res://assets/2D_Provided_Resources/characters/DinoSprites - vita.png" id="1_4pdrp"]
+[ext_resource type="Script" uid="uid://cern5lq24148n" path="res://Player/States/00_player_state.gd" id="3_hql3v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0qu43"]
 atlas = ExtResource("1_4pdrp")
@@ -40,8 +41,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wyx6f"]
-radius = 7.0
-height = 20.0
+radius = 5.0
+height = 16.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1832653433]
 script = ExtResource("1_0qu43")
@@ -54,5 +55,13 @@ autoplay = "Idle"
 frame_progress = 0.67777103
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834586414]
-position = Vector2(0, -12)
+position = Vector2(0, -11)
 shape = SubResource("CapsuleShape2D_wyx6f")
+
+[node name="States" type="Node" parent="." unique_id=1938894964]
+
+[node name="Idle" type="Node" parent="States" unique_id=573243015]
+script = ExtResource("3_hql3v")
+
+[node name="Run" type="Node" parent="States" unique_id=779645212]
+script = ExtResource("3_hql3v")
