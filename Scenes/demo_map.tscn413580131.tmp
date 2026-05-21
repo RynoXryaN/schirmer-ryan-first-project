@@ -13,15 +13,13 @@ height = 32
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bdi8m"]
 size = Vector2(32, 32)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_buxef"]
-gradient = SubResource("Gradient_buxef")
-width = 32
-height = 32
-
 [node name="DemoMap" type="Node2D" unique_id=1459569015]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=859431814]
 zoom = Vector2(4, 4)
+
+[node name="Player" parent="." unique_id=1832653433 instance=ExtResource("2_hkha8")]
+position = Vector2(0, 37)
 
 [node name="CollisionBodies" type="Node2D" parent="." unique_id=458560899]
 
@@ -76,18 +74,15 @@ texture = SubResource("GradientTexture2D_hkha8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionBodies/Sprite2D5/StaticBody2D" unique_id=1081305675]
 shape = SubResource("RectangleShape2D_bdi8m")
 
-[node name="OneWayPlatform01" type="Sprite2D" parent="CollisionBodies" unique_id=1388748338]
+[node name="Sprite2D7" type="Sprite2D" parent="CollisionBodies" unique_id=1388748338]
 position = Vector2(-59, 0.5)
 scale = Vector2(2, 0.40625)
-texture = SubResource("GradientTexture2D_buxef")
+texture = SubResource("GradientTexture2D_hkha8")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="CollisionBodies/OneWayPlatform01" unique_id=1868233545]
-collision_layer = 2
-collision_mask = 0
+[node name="StaticBody2D" type="StaticBody2D" parent="CollisionBodies/Sprite2D7" unique_id=1868233545]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionBodies/OneWayPlatform01/StaticBody2D" unique_id=27696197]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionBodies/Sprite2D7/StaticBody2D" unique_id=27696197]
 shape = SubResource("RectangleShape2D_bdi8m")
-one_way_collision = true
 
 [node name="Sprite2D8" type="Sprite2D" parent="CollisionBodies" unique_id=1533039257]
 position = Vector2(19, -24.000002)
@@ -119,6 +114,3 @@ texture = SubResource("GradientTexture2D_hkha8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionBodies/Sprite2D6/StaticBody2D" unique_id=991242547]
 shape = SubResource("RectangleShape2D_bdi8m")
-
-[node name="Player" parent="." unique_id=1832653433 instance=ExtResource("2_hkha8")]
-position = Vector2(0, 37)
