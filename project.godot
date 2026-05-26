@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SchirmerRyan_FirstProject"
-run/main_scene="uid://cuyeunwmfs0sg"
+run/main_scene="uid://b5beoshdgyky1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -51,6 +51,7 @@ down={
 
 2d_physics/layer_1="Ground"
 2d_physics/layer_2="One Way Platform"
+2d_physics/layer_5="Player"
 
 [physics]
 

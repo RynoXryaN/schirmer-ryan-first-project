@@ -4,14 +4,16 @@ extends CharacterBody2D
 const D_BUG_JUMP_INDICATOR = preload("uid://cxynln4h88jwb")
 
 #region /// on ready variables
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var character: Sprite2D = $Character
 @onready var collision_stand: CollisionShape2D = $CollisionStand
 @onready var collision_crouch: CollisionShape2D = $CollisionCrouch
 @onready var one_way_platform_raycast: RayCast2D = $OneWayPlatformRaycast
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 #endregion
 
 #region /// Export variables
 @export var move_speed : float = 100
+@export var	max_fall_speed : float = 600
 #endregion
 
 
@@ -50,6 +52,7 @@ func _process( _delta: float ) -> void:
 
 func _physics_process( _delta: float ) -> void:
 	velocity.y += gravity * _delta * gravity_multiplier
+	velocity.y = clampf( velocity.y, -1000.0, max_fall_speed )
 	move_and_slide()
 	change_state( current_state.physics_process( _delta ) )
 	pass
@@ -99,11 +102,15 @@ func change_state( new_state : PlayerState ) -> void:
 	
 	
 func update_direction() -> void:
-	#var prev_direction : Vector2 = direction
-	#direction = Input.get_vector( "move_left", "move_right", "up", "down" )
+	var prev_direction : Vector2 = direction
 	var x_axis = Input.get_axis("move_left", "move_right")
 	var y_axis = Input.get_axis("up", "down")
 	direction = Vector2(x_axis, y_axis)
+	if prev_direction.x != direction.x:
+		if direction.x < 0:
+			character.flip_h = true
+		elif direction.x > 0:
+			character.flip_h = false
 	pass
 	
 	

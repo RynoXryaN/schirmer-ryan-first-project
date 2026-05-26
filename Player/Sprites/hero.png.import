@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du4ror5cralaf"
-path="res://.godot/imported/forgotten_forest_example_tileset.png-6b7b8aceedd8e23d435493678748bac1.ctex"
+uid="uid://s1ndtcq8ocjl"
+path="res://.godot/imported/hero.png-fc9f56be69896132f5c953008368fa89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_02_world_building_foundations/forgotten_forest_example_tileset.png"
-dest_files=["res://.godot/imported/forgotten_forest_example_tileset.png-6b7b8aceedd8e23d435493678748bac1.ctex"]
+source_file="res://Player/Sprites/hero.png"
+dest_files=["res://.godot/imported/hero.png-fc9f56be69896132f5c953008368fa89.ctex"]
 
 [params]
 

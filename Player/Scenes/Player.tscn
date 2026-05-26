@@ -1,56 +1,109 @@
 [gd_scene format=3 uid="uid://bdnclrejqp8a0"]
 
 [ext_resource type="Script" uid="uid://dwdty0xtxhtek" path="res://Player/Scripts/player.gd" id="1_0qu43"]
-[ext_resource type="Texture2D" uid="uid://du1hmekg0npoi" path="res://assets/2D_Provided_Resources/characters/DinoSprites - vita.png" id="1_4pdrp"]
 [ext_resource type="Script" uid="uid://k67wmx36flxu" path="res://Player/States/idle.gd" id="3_hql3v"]
 [ext_resource type="Script" uid="uid://brrvkrfc08kl1" path="res://Player/States/jump.gd" id="4_ejah4"]
 [ext_resource type="Script" uid="uid://dop1h3d86swol" path="res://Player/States/run.gd" id="4_nk6jx"]
 [ext_resource type="Script" uid="uid://cg6sht8jaj48k" path="res://Player/States/fall.gd" id="5_wyx6f"]
 [ext_resource type="Script" uid="uid://c2yj0g6a0imm0" path="res://Player/States/crouch.gd" id="6_wyx6f"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0qu43"]
-atlas = ExtResource("1_4pdrp")
-region = Rect2(0, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hql3v"]
-atlas = ExtResource("1_4pdrp")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nk6jx"]
-atlas = ExtResource("1_4pdrp")
-region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7jgbj"]
-atlas = ExtResource("1_4pdrp")
-region = Rect2(72, 0, 24, 24)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ejah4"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0qu43")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hql3v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nk6jx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7jgbj")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://s1ndtcq8ocjl" path="res://Player/Sprites/hero.png" id="7_wyx6f"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wyx6f"]
-radius = 5.0
-height = 16.0
+radius = 8.0
+height = 50.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n15od"]
-radius = 5.0
-height = 12.0
+radius = 8.0
+
+[sub_resource type="Animation" id="Animation_n15od"]
+resource_name = "Crouch"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [20, 20, 21, 22]
+}
+
+[sub_resource type="Animation" id="Animation_on2vx"]
+resource_name = "Jump"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [24, 25, 26, 27, 28]
+}
+
+[sub_resource type="Animation" id="Animation_6rv2o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_ulbg8"]
+resource_name = "Run"
+length = 0.8
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [14, 15, 16, 17, 18, 19, 12, 13]
+}
+
+[sub_resource type="Animation" id="Animation_wyx6f"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n15od"]
+_data = {
+&"Crouch": SubResource("Animation_n15od"),
+&"Jump": SubResource("Animation_on2vx"),
+&"RESET": SubResource("Animation_6rv2o"),
+&"Run": SubResource("Animation_ulbg8"),
+&"idle": SubResource("Animation_wyx6f")
+}
 
 [node name="Player" type="CharacterBody2D" unique_id=1832653433]
 collision_layer = 0
@@ -70,6 +123,7 @@ script = ExtResource("4_nk6jx")
 [node name="Jump" type="Node" parent="States" unique_id=196461916]
 unique_name_in_owner = true
 script = ExtResource("4_ejah4")
+jump_velocity = 300.0
 
 [node name="Fall" type="Node" parent="States" unique_id=963781513]
 unique_name_in_owner = true
@@ -80,26 +134,26 @@ coyote_time = 0.125
 unique_name_in_owner = true
 script = ExtResource("6_wyx6f")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=344977414]
-position = Vector2(0, -9)
-sprite_frames = SubResource("SpriteFrames_ejah4")
-animation = &"Idle"
-autoplay = "Idle"
-frame_progress = 0.67777103
+[node name="Character" type="Sprite2D" parent="." unique_id=1582937770]
+position = Vector2(0, -40)
+texture = ExtResource("7_wyx6f")
+hframes = 16
+vframes = 4
+frame = 1
 
 [node name="CollisionStand" type="CollisionShape2D" parent="." unique_id=834586414]
-position = Vector2(0, -8)
+position = Vector2(0, -25)
 shape = SubResource("CapsuleShape2D_wyx6f")
 
 [node name="CollisionCrouch" type="CollisionShape2D" parent="." unique_id=2027176795]
-position = Vector2(0, -6)
+position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_n15od")
 
 [node name="Label" type="Label" parent="." unique_id=1446144736]
 offset_left = -37.0
-offset_top = -47.0
+offset_top = -84.0
 offset_right = 37.0
-offset_bottom = -24.0
+offset_bottom = -61.0
 theme_override_font_sizes/font_size = 12
 text = "label"
 horizontal_alignment = 1
@@ -108,3 +162,11 @@ horizontal_alignment = 1
 exclude_parent = false
 target_position = Vector2(0, 10)
 collision_mask = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=73344781]
+libraries/ = SubResource("AnimationLibrary_n15od")
+autoplay = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=919677668]
+position = Vector2(-1, -46)
+zoom = Vector2(2, 2)
