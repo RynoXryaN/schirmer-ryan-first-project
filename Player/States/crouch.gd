@@ -14,18 +14,26 @@ func enter() -> void:
 	player.animation_player.play( "Crouch")
 	player.collision_stand.disabled = true
 	player.collision_crouch.disabled = false
+	player.da_stand.disabled = true
+	player.da_crouch.disabled = false
 	pass
 	
 
 # What happens when you exit this state?
 func exit() -> void:
-	player.collision_stand.disabled = false
-	player.collision_crouch.disabled = true
+	player.collision_stand.set_deferred( "disabled", false)
+	player.collision_crouch.set_deferred( "disabled", true)
+	player.da_stand.set_deferred( "disabled", false)
+	player.da_crouch.set_deferred( "disabled", true)
 	pass
 	
 
 # What happens when an input is pressed?
 func handle_inputs( _event : InputEvent ) -> PlayerState:
+	if _event.is_action_pressed( "dash" ) and player.can_dash():
+		return dash
+	if _event.is_action_pressed( "attack" ):
+		return attack
 	if _event.is_action_pressed( "jump" ):
 		if player.one_way_platform_raycast.is_colliding() == true:
 			player.position.y += 4

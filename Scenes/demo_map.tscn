@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://cuyeunwmfs0sg"]
 
 [ext_resource type="PackedScene" uid="uid://bdnclrejqp8a0" path="res://Player/Scenes/Player.tscn" id="2_hkha8"]
+[ext_resource type="AudioStream" uid="uid://dm7k6xvijepjc" path="res://General/Audio/hit.wav" id="3_bdi8m"]
+[ext_resource type="Script" uid="uid://bghkwtmlo6w70" path="res://General/Scripts/damage_area.gd" id="3_husy1"]
+[ext_resource type="PackedScene" uid="uid://bhwdd1x5kfjt8" path="res://Levels/Props/dummies/test_dummy.tscn" id="4_husy1"]
+[ext_resource type="PackedScene" uid="uid://c0k4kdhi3sxgu" path="res://Levels/Props/crate.tscn" id="5_wveh7"]
+[ext_resource type="PackedScene" uid="uid://b4dm116l21u1p" path="res://Levels/Props/dummies/spike_dummy.tscn" id="6_a8jj6"]
 
 [sub_resource type="Gradient" id="Gradient_buxef"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
@@ -77,7 +82,7 @@ texture = SubResource("GradientTexture2D_hkha8")
 shape = SubResource("RectangleShape2D_bdi8m")
 
 [node name="OneWayPlatform01" type="Sprite2D" parent="CollisionBodies" unique_id=1388748338]
-position = Vector2(-59, 0.5)
+position = Vector2(-64, 0)
 scale = Vector2(2, 0.40625)
 texture = SubResource("GradientTexture2D_buxef")
 
@@ -122,3 +127,32 @@ shape = SubResource("RectangleShape2D_bdi8m")
 
 [node name="Player" parent="." unique_id=1832653433 instance=ExtResource("2_hkha8")]
 position = Vector2(0, 37)
+
+[node name="DamageArea" type="Area2D" parent="." unique_id=93539865]
+collision_layer = 32
+collision_mask = 0
+script = ExtResource("3_husy1")
+audio = ExtResource("3_bdi8m")
+metadata/_custom_type_script = "uid://bghkwtmlo6w70"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1672547390]
+collision_layer = 32
+collision_mask = 0
+
+[node name="Props" type="Node2D" parent="." unique_id=1971470404]
+
+[node name="TestDummy" parent="Props" unique_id=1473781896 instance=ExtResource("4_husy1")]
+position = Vector2(120, 56)
+
+[node name="Breakable" parent="Props" unique_id=164180075 instance=ExtResource("5_wveh7")]
+position = Vector2(-115, 6)
+
+[node name="SpikeDummy" parent="Props" unique_id=1940350269 instance=ExtResource("6_a8jj6")]
+position = Vector2(93, 56)
+
+[node name="HazardArea" parent="Props/SpikeDummy/BodySprite" parent_id_path=PackedInt32Array(1940350269, 1374983415) index="0" unique_id=1711532626]
+collision_layer = 112
+collision_mask = 112
+
+[editable path="Props/TestDummy"]
+[editable path="Props/SpikeDummy"]

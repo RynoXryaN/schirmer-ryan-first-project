@@ -51,7 +51,7 @@ func _process( _delta: float ) -> void:
 		return
 		
 	if trigger_type == TRIGGER_TYPE.INTERACT:
-		if player_in_area and Input.is_action_just_pressed( "Action_Interact" ):
+		if player_in_area and Input.is_action_just_pressed( "action_interact" ):
 			_transition_player(player_in_area)
 
 
@@ -64,11 +64,13 @@ func _on_player_entered( _n : Node2D ) -> void:
 	elif trigger_type == TRIGGER_TYPE.INTERACT:
 		player_in_area = _n
 		print("Player near transition.  Press Interact.")
+		Messages.input_hint_changed.emit( "interact" )
 	#SceneManager.transition_scene( target_level, target_area_name, get_offset( _n ), get_transition_direction() )
 	#print("LOCATION = ", location, " DIRECTION = ", get_transition_direction())
 	pass
 
 func _on_player_exited( _n : Node2D ) -> void:
+	Messages.input_hint_changed.emit( "" )
 	if _n == player_in_area:
 		player_in_area = null
 

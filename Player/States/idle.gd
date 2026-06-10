@@ -3,30 +3,31 @@ extends PlayerState
 
 
 
-# What happens when this state is initialized?
 func init()	-> void:
 	pass
 	
-	
-# What happens when we enter this state?
+
 func enter() -> void:
 	player.animation_player.play( "idle" )
+	player.jump_count = 0
+	player.dash_count = 0
 	pass
 	
 
-# What happens when you exit this state?
 func exit() -> void:
 	pass
 	
 
-# What happens when an input is pressed?
 func handle_inputs( _event : InputEvent ) -> PlayerState:
+	if _event.is_action_pressed( "dash" ) and player.can_dash():
+		return dash
+	if _event.is_action_pressed( "attack" ):
+		return attack
 	if _event.is_action_pressed( "jump" ):
 		return jump
 	return next_state
 	
-	
-# What happens each process tick in this state?	
+
 func process( _delta: float ) -> PlayerState:
 	if player.direction.x != 0:
 		return run
@@ -35,7 +36,6 @@ func process( _delta: float ) -> PlayerState:
 	return next_state
 		
 
-# What happens each physics_process tick in this state?	
 func physics_process( _delta: float ) -> PlayerState:
 	player.velocity.x = 0
 	return next_state

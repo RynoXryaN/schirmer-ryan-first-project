@@ -2005,10 +2005,3 @@ area_height = 3
 location = 1
 trigger_type = 1
 target_level = "uid://c8r81m8byaceh"
-
-[node name="Label" type="Label" parent="." unique_id=905577663]
-offset_left = 218.0
-offset_top = -267.0
-offset_right = 366.0
-offset_bottom = -244.0
-text = "Press 'E' to interact"

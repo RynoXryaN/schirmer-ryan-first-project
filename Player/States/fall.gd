@@ -16,10 +16,16 @@ func init()	-> void:
 # What happens when we enter this state?
 func enter() -> void:
 	player.animation_player.play( "Jump")
-	#player.animation_player.pause()
+	player.animation_player.pause()
 	player.gravity_multiplier = fall_gravity_multiplier
-	if player.previous_state == jump:
+	
+	# Handle jump count
+	var prev : PlayerState = player.previous_state
+	if prev == jump or prev == attack or prev == dash:
 		coyote_timer = 0
+	elif player.previous_state == crouch:
+		coyote_timer = 0
+		player.jump_count = 1
 	else:
 		coyote_timer = coyote_time
 	pass
@@ -33,8 +39,17 @@ func exit() -> void:
 
 # What happens when an input is pressed?
 func handle_inputs( event : InputEvent ) -> PlayerState:
+	if event.is_action_pressed( "dash" ) and player.can_dash():
+		return dash
+	if event.is_action_pressed( "attack" ):
+		if player.ground_slam and Input.is_action_pressed( "down" ):
+			return ground_slam
+		return attack
 	if event.is_action_pressed( "jump" ):
 		if coyote_timer > 0:
+			player.jump_count = 0
+			return jump
+		elif player.jump_count <= 1 and player.double_jump:
 			return jump
 		else:
 			buffer_timer = jump_buffer_time
@@ -52,8 +67,10 @@ func process( _delta: float ) -> PlayerState:
 # What happens each physics_process tick in this state?	
 func physics_process( _delta: float ) -> PlayerState:
 	if player.is_on_floor():
+		VisualEffectsFactory.land_dust( player.global_position )
 		player.add_debug_indicator( Color.RED)
 		if buffer_timer > 0:
+			player.jump_count = 0
 			return jump
 		return idle
 	player.velocity.x = player.direction.x * player.move_speed	

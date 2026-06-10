@@ -3,12 +3,24 @@ extends CharacterBody2D
 
 const D_BUG_JUMP_INDICATOR = preload("uid://cxynln4h88jwb")
 
+#region /// signals
+
+signal damage_taken
+
+#endregion
+
 #region /// on ready variables
-@onready var character: Sprite2D = $Character
+@onready var character: CharacterSprite = $Character
+@onready var attack_sprite: Sprite2D = %AttackSprite2D
 @onready var collision_stand: CollisionShape2D = $CollisionStand
 @onready var collision_crouch: CollisionShape2D = $CollisionCrouch
+@onready var da_stand: CollisionShape2D = $DamageArea/DA_Stand
+@onready var da_crouch: CollisionShape2D = $DamageArea/DA_Crouch
 @onready var one_way_platform_raycast: RayCast2D = $OneWayPlatformRaycast
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var attack_area: AttackArea = %AttackArea
+@onready var damage_area: DamageArea = $DamageArea
+
 #endregion
 
 #region /// Export variables
@@ -25,6 +37,26 @@ var previous_state : PlayerState :
 	get : return states[ 1 ]
 #endregion
 
+#region /// player stats
+var hp : float = 20 :
+	set( value ):
+		hp = clampf( value, 0, max_hp )
+		Messages.player_health_changed.emit( hp, max_hp)
+		
+var max_hp : float = 20 :
+	set( value ):
+		max_hp = value
+		Messages.player_health_changed.emit( hp, max_hp)
+		
+var dash : bool = true
+var dash_count : int = 0
+var double_jump : bool = true
+var jump_count : int = 0
+var ground_slam : bool = true
+var morph_roll : bool = false
+
+#endregion
+
 #region /// standard variables
 var direction : Vector2 = Vector2.ZERO
 var gravity : float = 980
@@ -36,10 +68,33 @@ var gravity_multiplier : float = 1.0
 func _ready() -> void:
 	initialize_states()
 	pass
-	
+	Messages.player_healed.connect( _on_player_healed )
+	damage_area.damage_taken.connect( _on_damage_taken)
+
 
 
 func _unhandled_input( event: InputEvent ) -> void:
+	if event.is_action_released( "jump" ) and velocity.y < 0:
+		velocity.y *= 0.5
+	if event.is_action_pressed( "action_interact" ):
+		Messages.player_interacted.emit( self )
+		return
+	#Get rid of this
+	#if event.is_actiopressed( "attack" ):
+		#attack_area.activate()
+		#return
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_MINUS:
+			if Input.is_key_pressed( KEY_SHIFT ):
+				max_hp -= 10
+			else:
+				hp -= 2
+		elif event.keycode == KEY_EQUAL:
+			if Input.is_key_pressed( KEY_SHIFT ):
+				max_hp += 10
+			else:
+				hp += 2
+			
 	change_state( current_state.handle_inputs( event ) )
 	pass
 
@@ -77,7 +132,6 @@ func initialize_states() -> void:
 		
 	change_state( current_state )
 	current_state.enter()
-	$Label.text = current_state.name
 	# set our first state
 	
 	pass
@@ -96,7 +150,6 @@ func change_state( new_state : PlayerState ) -> void:
 	states.push_front( new_state )
 	current_state.enter()
 	states.resize( 3 )
-	$Label.text = current_state.name
 	pass
 	
 	
@@ -106,11 +159,17 @@ func update_direction() -> void:
 	var x_axis = Input.get_axis("move_left", "move_right")
 	var y_axis = Input.get_axis("up", "down")
 	direction = Vector2(x_axis, y_axis)
+	
 	if prev_direction.x != direction.x:
+		attack_area.flip( direction.x )
 		if direction.x < 0:
 			character.flip_h = true
+			attack_sprite.flip_h = true
+			attack_sprite.position.x = -24
 		elif direction.x > 0:
 			character.flip_h = false
+			attack_sprite.flip_h = false
+			attack_sprite.position.x = 24
 	pass
 	
 	
@@ -122,11 +181,23 @@ func add_debug_indicator( color : Color = Color.RED ) -> void:
 	await get_tree().create_timer( 3.0 ).timeout
 	d.queue_free()
 	
+func _on_player_healed( amount : float ) -> void:
+	hp
+	#hp += amount
+	# Audio/visual
+	pass
 	
+func _on_damage_taken( attack_area : AttackArea ) -> void:
+	# reduce hp
+	hp -= attack_area.damage
+	damage_taken.emit()
+	# emit signal
+	pass
 	
-	
-	
-	
+func can_dash() -> bool:
+	if dash == false or dash_count > 0:
+		return false
+	return true
 	
 	#if not is_on_floor():
 		#velocity += get_gravity() * delta

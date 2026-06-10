@@ -11,11 +11,13 @@ func init()	-> void:
 	
 # What happens when we enter this state?
 func enter() -> void:
-	#play animation
+	VisualEffectsFactory.jump_dust( player.global_position )
 	player.animation_player.play( "Jump")
 	#player.animation_player.pause()
 	player.add_debug_indicator( Color.GREEN)
 	player.velocity.y -= jump_velocity
+	
+	do_jump()
 	
 	#Check if this is a buffer jump
 	#If it is, handle jump button release condition retroactively
@@ -36,6 +38,12 @@ func exit() -> void:
 
 # What happens when an input is pressed?
 func handle_inputs( event : InputEvent ) -> PlayerState:
+	if event.is_action_pressed( "dash" ) and player.can_dash():
+		return dash
+	if event.is_action_pressed( "attack" ):
+		if player.ground_slam and Input.is_action_pressed( "down" ):
+			return ground_slam
+		return attack
 	if event.is_action_released( "jump" ):
 		player.velocity.y *= 0.5
 		return fall
@@ -56,6 +64,16 @@ func physics_process( _delta: float ) -> PlayerState:
 		return fall
 	player.velocity.x = player.direction.x * player.move_speed
 	return next_state
+	
+func do_jump() -> void:
+	if player.jump_count > 0:
+		if player.double_jump == false:
+			return
+		elif player.jump_count > 1:
+			return
+	player.jump_count += 1
+	player.velocity.y -= jump_velocity
+	pass	
 	
 func set_jump_frame() -> void:
 	var frame : float = remap( player.velocity.y, -jump_velocity, 0.0, 0.0, 0.5 )
