@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxmqd003t2dau"
-path="res://.godot/imported/patrol_limit.svg-318fb28e2d0f216d6f01001e199568ac.ctex"
+uid="uid://4hmm2d5nopb3"
+path="res://.godot/imported/player_sensor.svg-cf224bed57af8f7914bf2e6a9e30d6ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/icons/patrol_limit.svg"
-dest_files=["res://.godot/imported/patrol_limit.svg-318fb28e2d0f216d6f01001e199568ac.ctex"]
+source_file="res://General/Icons/player_sensor.svg"
+dest_files=["res://.godot/imported/player_sensor.svg-cf224bed57af8f7914bf2e6a9e30d6ed.ctex"]
 
 [params]
 

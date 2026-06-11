@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dds0qgo1w2542"
-path="res://.godot/imported/TX Tileable - Dungeon Wall.png-f8da97e7b29e0fcfb075e7e396453d82.ctex"
+path="res://.godot/imported/TX Tileable - Dungeon Wall.png-4194d96917a9b95ca281eff43664db89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Dungeon/Textures/TX Tileable - Dungeon Wall.png"
-dest_files=["res://.godot/imported/TX Tileable - Dungeon Wall.png-f8da97e7b29e0fcfb075e7e396453d82.ctex"]
+source_file="res://Assets/Dungeon/Textures/TX Tileable - Dungeon Wall.png"
+dest_files=["res://.godot/imported/TX Tileable - Dungeon Wall.png-4194d96917a9b95ca281eff43664db89.ctex"]
 
 [params]
 

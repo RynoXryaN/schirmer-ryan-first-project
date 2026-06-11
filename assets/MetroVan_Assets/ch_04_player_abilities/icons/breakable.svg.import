@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn7dja3cxd3d7"
-path="res://.godot/imported/breakable.svg-7b8d0dc620639a91ba7f071e703dbe83.ctex"
+path="res://.godot/imported/breakable.svg-e7ccd6839b525f299d096ead27481e41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_04_player_abilities/icons/breakable.svg"
-dest_files=["res://.godot/imported/breakable.svg-7b8d0dc620639a91ba7f071e703dbe83.ctex"]
+source_file="res://Assets/MetroVan_Assets/ch_04_player_abilities/icons/breakable.svg"
+dest_files=["res://.godot/imported/breakable.svg-e7ccd6839b525f299d096ead27481e41.ctex"]
 
 [params]
 

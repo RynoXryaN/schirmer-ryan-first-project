@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mkxst6oludvn"
-path="res://.godot/imported/slime.png-54b291d603bcfe4315c4325bfbaeab1b.ctex"
+uid="uid://cy7cg1sf7uviq"
+path="res://.godot/imported/heart.png-c5c008a1bd4575d4bd9a0125a8925ea7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/slime/slime.png"
-dest_files=["res://.godot/imported/slime.png-54b291d603bcfe4315c4325bfbaeab1b.ctex"]
+source_file="res://General/Health_pickup/heart.png"
+dest_files=["res://.godot/imported/heart.png-c5c008a1bd4575d4bd9a0125a8925ea7.ctex"]
 
 [params]
 

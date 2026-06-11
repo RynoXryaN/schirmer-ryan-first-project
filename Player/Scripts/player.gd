@@ -182,14 +182,14 @@ func add_debug_indicator( color : Color = Color.RED ) -> void:
 	d.queue_free()
 	
 func _on_player_healed( amount : float ) -> void:
-	hp
+	hp += amount
 	#hp += amount
 	# Audio/visual
 	pass
 	
-func _on_damage_taken( attack_area : AttackArea ) -> void:
+func _on_damage_taken( a : AttackArea ) -> void:
 	# reduce hp
-	hp -= attack_area.damage
+	hp -= a.damage
 	damage_taken.emit()
 	# emit signal
 	pass

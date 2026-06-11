@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk5msww5jrqm"
-path="res://.godot/imported/props_destructible.png-1b4c9ff2628d92ec8a0cae40a2655917.ctex"
+path="res://.godot/imported/props_destructible.png-a18eef44a0a81c92bd202b11ed3b9463.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_04_player_abilities/sprites/props_destructible.png"
-dest_files=["res://.godot/imported/props_destructible.png-1b4c9ff2628d92ec8a0cae40a2655917.ctex"]
+source_file="res://Assets/MetroVan_Assets/ch_04_player_abilities/sprites/props_destructible.png"
+dest_files=["res://.godot/imported/props_destructible.png-a18eef44a0a81c92bd202b11ed3b9463.ctex"]
 
 [params]
 

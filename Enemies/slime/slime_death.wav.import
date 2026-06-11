@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://l17byu154s4e"
-path="res://.godot/imported/slime_death.wav-d3b740d3ce1742a4c6c7a4f79b89348d.sample"
+path="res://.godot/imported/slime_death.wav-05f50365072bef16bc02fc32afba69b1.sample"
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/slime/slime_death.wav"
-dest_files=["res://.godot/imported/slime_death.wav-d3b740d3ce1742a4c6c7a4f79b89348d.sample"]
+source_file="res://Enemies/slime/slime_death.wav"
+dest_files=["res://.godot/imported/slime_death.wav-05f50365072bef16bc02fc32afba69b1.sample"]
 
 [params]
 

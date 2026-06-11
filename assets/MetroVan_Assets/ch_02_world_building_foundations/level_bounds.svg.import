@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5snu8erbuvj8"
-path="res://.godot/imported/level_bounds.svg-2104c73c4280463c1675eb131a8249ce.ctex"
+path="res://.godot/imported/level_bounds.svg-fdf536aeea2f7e9750fefd340b34a8c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_02_world_building_foundations/level_bounds.svg"
-dest_files=["res://.godot/imported/level_bounds.svg-2104c73c4280463c1675eb131a8249ce.ctex"]
+source_file="res://Assets/MetroVan_Assets/ch_02_world_building_foundations/level_bounds.svg"
+dest_files=["res://.godot/imported/level_bounds.svg-fdf536aeea2f7e9750fefd340b34a8c8.ctex"]
 
 [params]
 

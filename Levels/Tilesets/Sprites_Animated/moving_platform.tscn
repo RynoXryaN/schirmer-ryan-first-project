@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://durq0j07eobvx"]
 
 [ext_resource type="Script" uid="uid://dwvu5dffuutdl" path="res://General/Scripts/moving_platform.gd" id="1_2kdma"]
-[ext_resource type="Texture2D" uid="uid://cgg02wbyel6fi" path="res://assets/Dungeon/Textures/TX Dungeon Props.png" id="1_k6pbn"]
+[ext_resource type="Texture2D" uid="uid://cgg02wbyel6fi" path="res://Assets/Dungeon/Textures/TX Dungeon Props.png" id="1_k6pbn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kdma"]
 size = Vector2(64, 5)

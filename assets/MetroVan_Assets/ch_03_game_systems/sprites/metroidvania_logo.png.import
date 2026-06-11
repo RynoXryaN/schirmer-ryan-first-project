@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxto0akf0a6ff"
-path="res://.godot/imported/metroidvania_logo.png-35c88a397cd946c426dd0a9a126eefa2.ctex"
+path="res://.godot/imported/metroidvania_logo.png-1a6e73aa5b778140c2b7f8e73a7db1a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_03_game_systems/sprites/metroidvania_logo.png"
-dest_files=["res://.godot/imported/metroidvania_logo.png-35c88a397cd946c426dd0a9a126eefa2.ctex"]
+source_file="res://Assets/MetroVan_Assets/ch_03_game_systems/sprites/metroidvania_logo.png"
+dest_files=["res://.godot/imported/metroidvania_logo.png-1a6e73aa5b778140c2b7f8e73a7db1a4.ctex"]
 
 [params]
 

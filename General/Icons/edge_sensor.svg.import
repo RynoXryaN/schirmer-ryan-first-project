@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://icxecnlgs1ny"
-path="res://.godot/imported/enemy.svg-7b94549501fc8163505475e276dcdfb7.ctex"
+uid="uid://ckort0vtfbmpm"
+path="res://.godot/imported/edge_sensor.svg-fe2a89b95533696bdd16e2c7b596731a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/icons/enemy.svg"
-dest_files=["res://.godot/imported/enemy.svg-7b94549501fc8163505475e276dcdfb7.ctex"]
+source_file="res://General/Icons/edge_sensor.svg"
+dest_files=["res://.godot/imported/edge_sensor.svg-fe2a89b95533696bdd16e2c7b596731a.ctex"]
 
 [params]
 

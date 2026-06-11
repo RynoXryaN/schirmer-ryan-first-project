@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpabltjl276if"
-path="res://.godot/imported/GrassLandsSimple_Tileset.png-aee5c57669f6dab43c5628c27a98e2c2.ctex"
+path="res://.godot/imported/GrassLandsSimple_Tileset.png-bc72d28f7c51001816bb068dc8fef021.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/LushForestAssetPack/Tilesets/GrassLandsSimple_Tileset.png"
-dest_files=["res://.godot/imported/GrassLandsSimple_Tileset.png-aee5c57669f6dab43c5628c27a98e2c2.ctex"]
+source_file="res://Assets/LushForestAssetPack/Tilesets/GrassLandsSimple_Tileset.png"
+dest_files=["res://.godot/imported/GrassLandsSimple_Tileset.png-bc72d28f7c51001816bb068dc8fef021.ctex"]
 
 [params]
 

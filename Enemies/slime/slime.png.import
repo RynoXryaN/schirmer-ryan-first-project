@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cng10xda6ng2r"
-path="res://.godot/imported/enemy_hit_particles.svg-7ea59ffcaf28e66ca1f67f54f7bbd969.ctex"
+uid="uid://mkxst6oludvn"
+path="res://.godot/imported/slime.png-1bc777fef05ca6702bd8bd579f09b9d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/icons/enemy_hit_particles.svg"
-dest_files=["res://.godot/imported/enemy_hit_particles.svg-7ea59ffcaf28e66ca1f67f54f7bbd969.ctex"]
+source_file="res://Enemies/slime/slime.png"
+dest_files=["res://.godot/imported/slime.png-1bc777fef05ca6702bd8bd579f09b9d5.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

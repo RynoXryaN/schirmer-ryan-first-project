@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7olvgowg734e"
-path="res://.godot/imported/save_point.svg-d51e0fb8e227e899c583be5786ab9ed2.ctex"
+path="res://.godot/imported/save_point.svg-351b8a12336db3f51ddec412ab53c70d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_03_game_systems/icons/save_point.svg"
-dest_files=["res://.godot/imported/save_point.svg-d51e0fb8e227e899c583be5786ab9ed2.ctex"]
+source_file="res://Assets/MetroVan_Assets/ch_03_game_systems/icons/save_point.svg"
+dest_files=["res://.godot/imported/save_point.svg-351b8a12336db3f51ddec412ab53c70d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qvnka0udyb2t"
-path="res://.godot/imported/loot_drop.svg-5c9484ea2f51ce1b25c1e068140221d5.ctex"
+uid="uid://icxecnlgs1ny"
+path="res://.godot/imported/enemy.svg-c213bba7eb49095bacffdc943976ea4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/icons/loot_drop.svg"
-dest_files=["res://.godot/imported/loot_drop.svg-5c9484ea2f51ce1b25c1e068140221d5.ctex"]
+source_file="res://General/Icons/enemy.svg"
+dest_files=["res://.godot/imported/enemy.svg-c213bba7eb49095bacffdc943976ea4e.ctex"]
 
 [params]
 

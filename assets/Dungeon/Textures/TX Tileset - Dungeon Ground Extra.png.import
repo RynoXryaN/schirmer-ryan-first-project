@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duaqty6k75tuc"
-path="res://.godot/imported/TX Tileset - Dungeon Ground Extra.png-17537eaba622b29227e79b854e1f65f3.ctex"
+path="res://.godot/imported/TX Tileset - Dungeon Ground Extra.png-ca66f98f0a8c41da39196232a15f3ebe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Dungeon/Textures/TX Tileset - Dungeon Ground Extra.png"
-dest_files=["res://.godot/imported/TX Tileset - Dungeon Ground Extra.png-17537eaba622b29227e79b854e1f65f3.ctex"]
+source_file="res://Assets/Dungeon/Textures/TX Tileset - Dungeon Ground Extra.png"
+dest_files=["res://.godot/imported/TX Tileset - Dungeon Ground Extra.png-ca66f98f0a8c41da39196232a15f3ebe.ctex"]
 
 [params]
 

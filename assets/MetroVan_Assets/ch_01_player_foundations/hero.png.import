@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7wikw3l0mcvu"
-path="res://.godot/imported/hero.png-7650c6c4cff6b8a2793116cbfb5f7029.ctex"
+path="res://.godot/imported/hero.png-9affdf5a335fffb52bae7a5b986007b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_01_player_foundations/hero.png"
-dest_files=["res://.godot/imported/hero.png-7650c6c4cff6b8a2793116cbfb5f7029.ctex"]
+source_file="res://Assets/MetroVan_Assets/ch_01_player_foundations/hero.png"
+dest_files=["res://.godot/imported/hero.png-9affdf5a335fffb52bae7a5b986007b5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4hmm2d5nopb3"
-path="res://.godot/imported/player_sensor.svg-6eb6d5cee3254d231b3e9b0c0b886593.ctex"
+uid="uid://qvnka0udyb2t"
+path="res://.godot/imported/loot_drop.svg-1cfc8c93383b0ad05c8b9bb0952cdb86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_05_enemies/icons/player_sensor.svg"
-dest_files=["res://.godot/imported/player_sensor.svg-6eb6d5cee3254d231b3e9b0c0b886593.ctex"]
+source_file="res://General/Icons/loot_drop.svg"
+dest_files=["res://.godot/imported/loot_drop.svg-1cfc8c93383b0ad05c8b9bb0952cdb86.ctex"]
 
 [params]
 

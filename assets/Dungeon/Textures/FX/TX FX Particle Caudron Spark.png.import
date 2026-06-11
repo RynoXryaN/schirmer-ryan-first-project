@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5nym3rr58lcm"
-path="res://.godot/imported/TX FX Particle Caudron Spark.png-60c3a48dab94b1c99027e69d9ad33974.ctex"
+path="res://.godot/imported/TX FX Particle Caudron Spark.png-5416340145938a669b800e117c847175.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Dungeon/Textures/FX/TX FX Particle Caudron Spark.png"
-dest_files=["res://.godot/imported/TX FX Particle Caudron Spark.png-60c3a48dab94b1c99027e69d9ad33974.ctex"]
+source_file="res://Assets/Dungeon/Textures/FX/TX FX Particle Caudron Spark.png"
+dest_files=["res://.godot/imported/TX FX Particle Caudron Spark.png-5416340145938a669b800e117c847175.ctex"]
 
 [params]
 

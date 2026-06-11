@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch0iww5sn2j45"
-path="res://.godot/imported/TX FX Light Shaft.png-e0797a05d00dc84ddb8330e91b1e8bef.ctex"
+path="res://.godot/imported/TX FX Light Shaft.png-9240df0a24b484ea8cd23b4a85c9fa5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Dungeon/Textures/FX/TX FX Light Shaft.png"
-dest_files=["res://.godot/imported/TX FX Light Shaft.png-e0797a05d00dc84ddb8330e91b1e8bef.ctex"]
+source_file="res://Assets/Dungeon/Textures/FX/TX FX Light Shaft.png"
+dest_files=["res://.godot/imported/TX FX Light Shaft.png-9240df0a24b484ea8cd23b4a85c9fa5a.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d4cfc4iaeqgrp"
-path="res://.godot/imported/ui_success_audio.wav-c98b724b0367f457c771900e90f27b96.sample"
+path="res://.godot/imported/ui_success_audio.wav-35a7b04badf6a6208ddf0f73e655e66f.sample"
 
 [deps]
 
-source_file="res://assets/MetroVan_Assets/ch_03_game_systems/audio/ui_success_audio.wav"
-dest_files=["res://.godot/imported/ui_success_audio.wav-c98b724b0367f457c771900e90f27b96.sample"]
+source_file="res://Assets/MetroVan_Assets/ch_03_game_systems/audio/ui_success_audio.wav"
+dest_files=["res://.godot/imported/ui_success_audio.wav-35a7b04badf6a6208ddf0f73e655e66f.sample"]
 
 [params]
 
