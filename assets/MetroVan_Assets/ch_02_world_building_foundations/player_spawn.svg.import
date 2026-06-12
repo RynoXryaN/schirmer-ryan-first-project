@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2lnjwvbwvb0s"
-path="res://.godot/imported/player_spawn.svg-a0a65823b353cba8980ec559ce7873bc.ctex"
+path="res://.godot/imported/player_spawn.svg-cfa98173e5d85b83ede8dae796f1fdf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MetroVan_Assets/ch_02_world_building_foundations/player_spawn.svg"
-dest_files=["res://.godot/imported/player_spawn.svg-a0a65823b353cba8980ec559ce7873bc.ctex"]
+source_file="res://assets/MetroVan_Assets/ch_02_world_building_foundations/player_spawn.svg"
+dest_files=["res://.godot/imported/player_spawn.svg-cfa98173e5d85b83ede8dae796f1fdf8.ctex"]
 
 [params]
 

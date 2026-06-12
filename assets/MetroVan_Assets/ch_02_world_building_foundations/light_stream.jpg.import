@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2xbdtxokixtg"
-path="res://.godot/imported/light_stream.jpg-0ef41403b27a284c60fc3b5466b24df3.ctex"
+path="res://.godot/imported/light_stream.jpg-d8720d8ac46ad5d0141fdc8b40935dcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MetroVan_Assets/ch_02_world_building_foundations/light_stream.jpg"
-dest_files=["res://.godot/imported/light_stream.jpg-0ef41403b27a284c60fc3b5466b24df3.ctex"]
+source_file="res://assets/MetroVan_Assets/ch_02_world_building_foundations/light_stream.jpg"
+dest_files=["res://.godot/imported/light_stream.jpg-d8720d8ac46ad5d0141fdc8b40935dcd.ctex"]
 
 [params]
 

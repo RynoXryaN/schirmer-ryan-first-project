@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b12gdfearvyb5"
-path="res://.godot/imported/TX Dungeon Props Shadow.png-977111b97b506c083c436768078be1ef.ctex"
+path="res://.godot/imported/TX Dungeon Props Shadow.png-e13a6bb0eadb11a4bc68fc1a0b78ee1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dungeon/Textures/TX Dungeon Props Shadow.png"
-dest_files=["res://.godot/imported/TX Dungeon Props Shadow.png-977111b97b506c083c436768078be1ef.ctex"]
+source_file="res://assets/Dungeon/Textures/TX Dungeon Props Shadow.png"
+dest_files=["res://.godot/imported/TX Dungeon Props Shadow.png-e13a6bb0eadb11a4bc68fc1a0b78ee1c.ctex"]
 
 [params]
 

@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://jpbhet65r764" path="res://General/Scripts/level_bounds.gd" id="3_0jc0d"]
 [ext_resource type="PackedScene" uid="uid://bdnclrejqp8a0" path="res://Player/Scenes/Player.tscn" id="4_u1yvc"]
 [ext_resource type="PackedScene" uid="uid://durq0j07eobvx" path="res://Levels/Tilesets/Sprites_Animated/moving_platform.tscn" id="5_u1yvc"]
+[ext_resource type="Script" uid="uid://e4pke5vxuyxn" path="res://Music/music_auto_trigger.gd" id="6_ymvul"]
+[ext_resource type="AudioStream" uid="uid://r5525kn3sdx7" path="res://Music/dungeon_01.ogg" id="7_h4t68"]
 
 [node name="Tower01" type="Node2D" unique_id=243067464]
 
@@ -43,6 +45,11 @@ position = Vector2(600, 534)
 
 [node name="EndMarker" parent="Moving_Platform_Container" index="2" unique_id=145024865]
 position = Vector2(600, 70)
+
+[node name="MusicAutoTrigger" type="Node" parent="." unique_id=87531037]
+script = ExtResource("6_ymvul")
+track = ExtResource("7_h4t68")
+metadata/_custom_type_script = "uid://e4pke5vxuyxn"
 
 [connection signal="lever_activated" from="Lever" to="Moving_Platform_Container" method="_on_lever_lever_activated"]
 

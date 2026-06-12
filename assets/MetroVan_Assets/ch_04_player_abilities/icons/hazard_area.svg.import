@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx4fgdket4up7"
-path="res://.godot/imported/hazard_area.svg-3c1cca711237c82452f4baedde6a7034.ctex"
+path="res://.godot/imported/hazard_area.svg-3d28cb0cd31e88656a173957355c05bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MetroVan_Assets/ch_04_player_abilities/icons/hazard_area.svg"
-dest_files=["res://.godot/imported/hazard_area.svg-3c1cca711237c82452f4baedde6a7034.ctex"]
+source_file="res://assets/MetroVan_Assets/ch_04_player_abilities/icons/hazard_area.svg"
+dest_files=["res://.godot/imported/hazard_area.svg-3d28cb0cd31e88656a173957355c05bc.ctex"]
 
 [params]
 

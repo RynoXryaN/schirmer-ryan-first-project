@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://divp7tp0pml0g"
-path="res://.godot/imported/Forest_layer5.png-3648694b0aed2b3ec614617689570a33.ctex"
+path="res://.godot/imported/Forest_layer5.png-7c3eed789ae3dc02bff2ecf90b392595.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer5.png"
-dest_files=["res://.godot/imported/Forest_layer5.png-3648694b0aed2b3ec614617689570a33.ctex"]
+source_file="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer5.png"
+dest_files=["res://.godot/imported/Forest_layer5.png-7c3eed789ae3dc02bff2ecf90b392595.ctex"]
 
 [params]
 

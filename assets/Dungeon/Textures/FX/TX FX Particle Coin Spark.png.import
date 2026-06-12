@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs373g4hv7tb5"
-path="res://.godot/imported/TX FX Particle Coin Spark.png-f08bf29ab9b3c444a041dfff54d89eed.ctex"
+path="res://.godot/imported/TX FX Particle Coin Spark.png-e086878871e4a341e6c928b681260382.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dungeon/Textures/FX/TX FX Particle Coin Spark.png"
-dest_files=["res://.godot/imported/TX FX Particle Coin Spark.png-f08bf29ab9b3c444a041dfff54d89eed.ctex"]
+source_file="res://assets/Dungeon/Textures/FX/TX FX Particle Coin Spark.png"
+dest_files=["res://.godot/imported/TX FX Particle Coin Spark.png-e086878871e4a341e6c928b681260382.ctex"]
 
 [params]
 

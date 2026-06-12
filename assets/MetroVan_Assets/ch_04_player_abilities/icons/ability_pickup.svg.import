@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjammab7oystp"
-path="res://.godot/imported/ability_pickup.svg-387a6ee9e48d27897bbc37879542fbad.ctex"
+path="res://.godot/imported/ability_pickup.svg-fa5e1b58513a2121e08351d8a076fac2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MetroVan_Assets/ch_04_player_abilities/icons/ability_pickup.svg"
-dest_files=["res://.godot/imported/ability_pickup.svg-387a6ee9e48d27897bbc37879542fbad.ctex"]
+source_file="res://assets/MetroVan_Assets/ch_04_player_abilities/icons/ability_pickup.svg"
+dest_files=["res://.godot/imported/ability_pickup.svg-fa5e1b58513a2121e08351d8a076fac2.ctex"]
 
 [params]
 

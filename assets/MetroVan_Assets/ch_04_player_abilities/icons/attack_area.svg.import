@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c74iixliws2j"
-path="res://.godot/imported/attack_area.svg-6bc4ec2dd999817e6f5ab8a0afc6996c.ctex"
+path="res://.godot/imported/attack_area.svg-7fce2f7669aff8cd5ee957bdeb2548c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MetroVan_Assets/ch_04_player_abilities/icons/attack_area.svg"
-dest_files=["res://.godot/imported/attack_area.svg-6bc4ec2dd999817e6f5ab8a0afc6996c.ctex"]
+source_file="res://assets/MetroVan_Assets/ch_04_player_abilities/icons/attack_area.svg"
+dest_files=["res://.godot/imported/attack_area.svg-7fce2f7669aff8cd5ee957bdeb2548c6.ctex"]
 
 [params]
 

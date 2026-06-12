@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bnvmpee857tcc"
-path="res://.godot/imported/sfx_coin.ogg-ae6cee9b37ac6255c03776b96ae0593a.oggvorbisstr"
+path="res://.godot/imported/sfx_coin.ogg-4e75d0af6f8873c344092589de29c3a6.oggvorbisstr"
 
 [deps]
 
-source_file="res://Assets/2D_Provided_Resources/sounds/sfx_coin.ogg"
-dest_files=["res://.godot/imported/sfx_coin.ogg-ae6cee9b37ac6255c03776b96ae0593a.oggvorbisstr"]
+source_file="res://assets/2D_Provided_Resources/sounds/sfx_coin.ogg"
+dest_files=["res://.godot/imported/sfx_coin.ogg-4e75d0af6f8873c344092589de29c3a6.oggvorbisstr"]
 
 [params]
 

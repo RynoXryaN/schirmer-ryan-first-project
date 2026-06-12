@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct0acl3quuvo1"
-path="res://.godot/imported/TX FX Caudron Smoke.png-d15ad20161fbf09120e1522034f8fab5.ctex"
+path="res://.godot/imported/TX FX Caudron Smoke.png-a597dc48ed4af11480b3f322f1089aaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dungeon/Textures/FX/TX FX Caudron Smoke.png"
-dest_files=["res://.godot/imported/TX FX Caudron Smoke.png-d15ad20161fbf09120e1522034f8fab5.ctex"]
+source_file="res://assets/Dungeon/Textures/FX/TX FX Caudron Smoke.png"
+dest_files=["res://.godot/imported/TX FX Caudron Smoke.png-a597dc48ed4af11480b3f322f1089aaf.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1g7gwpt6siv3"
-path="res://.godot/imported/patrol_limit.png-a4ee4d5aaf946083a1b76aee48ac78eb.ctex"
+path="res://.godot/imported/patrol_limit.png-c9d00fb535a40e068810bef301cf4afa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MetroVan_Assets/ch_05_enemies/sprites/patrol_limit.png"
-dest_files=["res://.godot/imported/patrol_limit.png-a4ee4d5aaf946083a1b76aee48ac78eb.ctex"]
+source_file="res://assets/MetroVan_Assets/ch_05_enemies/sprites/patrol_limit.png"
+dest_files=["res://.godot/imported/patrol_limit.png-c9d00fb535a40e068810bef301cf4afa.ctex"]
 
 [params]
 

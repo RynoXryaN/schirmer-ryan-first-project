@@ -15,12 +15,17 @@ run/main_scene="uid://cuyeunwmfs0sg"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://bcf8yb7w3a0jl"
+
 [autoload]
 
 SceneManager="*uid://di7osbgisxu0r"
 Messages="*uid://dksljgs8hch38"
 PlayerHud="*uid://c61vbgu3y8l3j"
 VisualEffectsFactory="*uid://c3n1ayw0nho7x"
+Audio="*uid://0e38hcyq4lfg"
 
 [global_group]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://broytfmlou40n"
-path="res://.godot/imported/DinoSprites - tard.png-0fafd2eec56e82f24c12d893548e2552.ctex"
+path="res://.godot/imported/DinoSprites - tard.png-9111442ced5f8ac7a62a42e07eb27f2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2D_Provided_Resources/characters/DinoSprites - tard.png"
-dest_files=["res://.godot/imported/DinoSprites - tard.png-0fafd2eec56e82f24c12d893548e2552.ctex"]
+source_file="res://assets/2D_Provided_Resources/characters/DinoSprites - tard.png"
+dest_files=["res://.godot/imported/DinoSprites - tard.png-9111442ced5f8ac7a62a42e07eb27f2c.ctex"]
 
 [params]
 

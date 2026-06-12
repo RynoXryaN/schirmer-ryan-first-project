@@ -1,17 +1,19 @@
 [gd_scene format=4 uid="uid://b5beoshdgyky1"]
 
-[ext_resource type="Texture2D" uid="uid://divp7tp0pml0g" path="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer5.png" id="1_7eurn"]
+[ext_resource type="Texture2D" uid="uid://divp7tp0pml0g" path="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer5.png" id="1_7eurn"]
 [ext_resource type="TileSet" uid="uid://fkl8smocyiru" path="res://Levels/Tilesets/forgotten_forest.tres" id="1_jtdhb"]
 [ext_resource type="PackedScene" uid="uid://bdnclrejqp8a0" path="res://Player/Scenes/Player.tscn" id="2_ga02f"]
 [ext_resource type="Script" uid="uid://jpbhet65r764" path="res://General/Scripts/level_bounds.gd" id="3_wjcrk"]
 [ext_resource type="PackedScene" uid="uid://cc1c1tjekfgfx" path="res://General/Level_transitions/level_transition.tscn" id="4_gdfn2"]
-[ext_resource type="Texture2D" uid="uid://cah8uleg5m0w8" path="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer4.png" id="5_ljxc3"]
-[ext_resource type="Texture2D" uid="uid://db52e2df1bq5f" path="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer6.png" id="6_qrw6t"]
-[ext_resource type="Texture2D" uid="uid://d2rs5u8jrj0ln" path="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer3.png" id="8_y6qxr"]
-[ext_resource type="Texture2D" uid="uid://btxyi5xv6vp8h" path="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer2.png" id="9_y6qxr"]
-[ext_resource type="Texture2D" uid="uid://b3388dtkq7sac" path="res://Assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer1.png" id="10_ji3mo"]
+[ext_resource type="Texture2D" uid="uid://cah8uleg5m0w8" path="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer4.png" id="5_ljxc3"]
+[ext_resource type="Texture2D" uid="uid://db52e2df1bq5f" path="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer6.png" id="6_qrw6t"]
+[ext_resource type="Texture2D" uid="uid://d2rs5u8jrj0ln" path="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer3.png" id="8_y6qxr"]
+[ext_resource type="Texture2D" uid="uid://btxyi5xv6vp8h" path="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer2.png" id="9_y6qxr"]
+[ext_resource type="Texture2D" uid="uid://b3388dtkq7sac" path="res://assets/LushForestAssetPack/ParallaxScrollingForestBackground/Forest_layer1.png" id="10_ji3mo"]
 [ext_resource type="PackedScene" uid="uid://d57kc2dwj02f" path="res://General/Health_pickup/health_pickup.tscn" id="11_rqard"]
 [ext_resource type="PackedScene" uid="uid://cyrvsh646p2ii" path="res://Enemies/slime_2/slime_2.tscn" id="12_fa1ay"]
+[ext_resource type="Script" uid="uid://e4pke5vxuyxn" path="res://Music/music_auto_trigger.gd" id="13_5msop"]
+[ext_resource type="AudioStream" uid="uid://d4jsvuylq4x7x" path="res://Music/forest_01.ogg" id="14_u1r28"]
 
 [sub_resource type="Gradient" id="Gradient_ji3mo"]
 offsets = PackedFloat32Array(0, 0.9963768)
@@ -138,3 +140,8 @@ position = Vector2(-147, -158)
 
 [node name="Slime4" parent="." unique_id=1845463248 instance=ExtResource("12_fa1ay")]
 position = Vector2(318, -188)
+
+[node name="MusicAutoTrigger" type="Node" parent="." unique_id=1727904921]
+script = ExtResource("13_5msop")
+track = ExtResource("14_u1r28")
+metadata/_custom_type_script = "uid://e4pke5vxuyxn"
